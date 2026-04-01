@@ -1,12 +1,11 @@
-const sections = document.querySelectorAll(".section");
+const cards = document.querySelectorAll(".card");
 
-window.addEventListener("scroll", () => {
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
+cards.forEach(card => {
+  card.addEventListener("mouseover", () => {
+    card.style.transform = "scale(1.03)";
+  });
 
-    if (top < window.innerHeight - 50) {
-      section.style.opacity = 1;
-      section.style.transform = "translateY(0)";
-    }
+  card.addEventListener("mouseout", () => {
+    card.style.transform = "scale(1)";
   });
 });
