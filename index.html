@@ -2,67 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nithin Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nithin Sri Vimala Devi – CV</title>
+  <meta name="description" content="CV of Nithin Sri Vimala Devi – BSc Computing Science Student at CU London">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
+<div class="page">
 
-  <!-- HEADER -->
-  <div class="header">
-    <img src="avatar.png" class="avatar">
-    <h1>Nithin Sri</h1>
-    <p>Computing Science Student | Ethical Hacking</p>
+  <!-- SIDEBAR -->
+  <div class="sidebar">
 
-    <div class="buttons">
-      <a href="mailto:nithinsri1443@gmail.com" class="btn">📧 Email Me</a>
-      <a href="https://github.com/Nithin-sri" target="_blank" class="btn">💻 GitHub</a>
+    <div class="name-block">
+      <div class="avatar">NS</div>
+      <h1>Nithin Sri<br>Vimala Devi</h1>
+      <div class="subtitle">BSc Computing Science<br>Aspiring Software Developer</div>
     </div>
+
+    <div class="sb-section">
+      <div class="sb-label">Contact</div>
+      <div class="contact-grid">
+        <div class="sb-item">
+          <span class="item-label">Phone</span>
+          <span>(+44) 07887 176812</span>
+        </div>
+        <div class="sb-item">
+          <span class="item-label">Email</span>
+          <span>nithinsri1443@gmail.com</span>
+        </div>
+        <div class="sb-item">
+          <span class="item-label">Location</span>
+          <span>Dartford, DA15EY<br>United Kingdom</span>
+        </div>
+        <div class="sb-item">
+          <span class="item-label">GitHub</span>
+          <a href="https://github.com/Nithin-sri" target="_blank">github.com/Nithin-sri</a>
+        </div>
+      </div>
+      <div class="contact-btns">
+        <a href="mailto:nithinsri1443@gmail.com" class="cv-btn btn-email">✉ Email Me</a>
+        <button class="cv-btn btn-copy" id="copyBtn">⎘ Copy Email</button>
+        <div class="copy-confirm" id="copyMsg">Copied to clipboard!</div>
+      </div>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-label">Technical Skills</div>
+      <div class="skill-list">
+        <div class="skill-item">
+          <span class="skill-name">Python</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Java</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">POS Systems</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Problem Solving</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Team Collaboration</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-label">Languages</div>
+      <div class="lang-list">
+        <div class="lang-item">
+          <span class="lang-flag">🇬🇧</span>
+          <span>English</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-flag">🇮🇳</span>
+          <span>Tamil</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-label">Driving</div>
+      <div class="sb-item">
+        <span>Full UK Licence (Manual)</span>
+      </div>
+    </div>
+
   </div>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Motivated Computing Science student with strong interest in cybersecurity,
-      problem-solving and real-world applications.
-    </p>
-  </section>
+  <!-- MAIN -->
+  <div class="main">
 
-  <!-- EXPERIENCE -->
-  <section>
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Esso — Retail Assistant</h3>
-      <p>Handled POS systems, troubleshooting, and customer service.</p>
+    <div class="section">
+      <div class="sec-header">
+        <span class="sec-title">About Me</span>
+        <div class="sec-line"></div>
+      </div>
+      <p class="about-text">
+        BSc (Hons) Computing Science student at CU London with a strong foundation in programming and analytical thinking. Experienced in fast-paced retail environments with a proven track record of accuracy and customer focus. A collaborative team player with leadership experience gained through competitive sport at a national level — bringing discipline, communication, and a problem-solving mindset to every challenge.
+      </p>
     </div>
-  </section>
 
-  <!-- EDUCATION -->
-  <section>
-    <h2>Education</h2>
-    <div class="card">
-      <h3>Coventry University</h3>
-      <p>BSc Computing Science</p>
+    <div class="section">
+      <div class="sec-header">
+        <span class="sec-title">Experience</span>
+        <div class="sec-line"></div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Esso, Bexleyheath</span>
+          <span class="entry-date">Mar 2025 – Present</span>
+        </div>
+        <div class="entry-sub">Retail Assistant / Forecourt Assistant</div>
+        <ul class="entry-bullets">
+          <li>Operate digital Point-of-Sale (POS) systems for transaction processing and payment management</li>
+          <li>Troubleshoot minor POS and payment terminal issues to maintain smooth customer transactions</li>
+          <li>Maintain transaction accuracy and data integrity during high-volume retail operations</li>
+        </ul>
+      </div>
     </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
-    <div class="tags">
-      <span>Python</span>
-      <span>Java</span>
-      <span>Problem Solving</span>
-      <span>Communication</span>
+    <div class="section">
+      <div class="sec-header">
+        <span class="sec-title">Education</span>
+        <div class="sec-line"></div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">CU London (Coventry University Group)</span>
+          <span class="entry-date">Jan 2025 – Present</span>
+        </div>
+        <div class="entry-sub">BSc (Hons) Computing Science · Dagenham, UK</div>
+        <ul class="entry-bullets">
+          <li>Lead group collaboration in academic projects, coordinating tasks and supporting team members</li>
+          <li>Deliver group presentations and technical explanations as part of coursework</li>
+          <li>Assist peers in understanding project requirements and contribute to successful team outcomes</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">SKV Vidhyaashram, Tamil Nadu, India</span>
+          <span class="entry-date">Jun 2023 – May 2024</span>
+        </div>
+        <div class="entry-sub">12th Grade</div>
+        <ul class="entry-bullets">
+          <li>Led the school basketball team in the All South India Basketball Tournament</li>
+          <li>Achieved 3rd place at a regional competitive level, demonstrating leadership under pressure</li>
+          <li>Developed discipline, teamwork, and collaboration skills through competitive sport</li>
+        </ul>
+      </div>
     </div>
-  </section>
 
+    <div class="section">
+      <div class="sec-header">
+        <span class="sec-title">Skills &amp; Competencies</span>
+        <div class="sec-line"></div>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Programming Concepts</span>
+        <span class="skill-tag">Logical Thinking</span>
+        <span class="skill-tag">Problem Solving</span>
+        <span class="skill-tag">Team Collaboration</span>
+        <span class="skill-tag">Verbal Communication</span>
+        <span class="skill-tag">Written Communication</span>
+        <span class="skill-tag">Presenting Ideas</span>
+        <span class="skill-tag">POS Systems</span>
+        <span class="skill-tag">Data Integrity</span>
+        <span class="skill-tag">Customer Service</span>
+      </div>
+    </div>
+
+    <div class="cv-footer">
+      Nithin Sri Vimala Devi &nbsp;·&nbsp; nithinsri1443@gmail.com &nbsp;·&nbsp; Dartford, UK &nbsp;·&nbsp; 2026
+    </div>
+
+  </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
